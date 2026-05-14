@@ -1,4 +1,12 @@
-import { createIcons, Search, ChevronDown, ShoppingBag, User, Headphones, Menu } from "lucide";
+import {
+  createIcons,
+  Search,
+  ChevronDown,
+  ShoppingCart,
+  User,
+  Phone,
+  Menu,
+} from "lucide";
 import "@fontsource/vazirmatn";
 import "./style.css";
 
@@ -9,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       Search: Search,
       ChevronDown: ChevronDown,
       User: User,
-      Headphones: Headphones,
-      ShoppingBag: ShoppingBag,
+      Phone: Phone,
+      ShoppingCart: ShoppingCart,
       Menu: Menu,
     },
   });

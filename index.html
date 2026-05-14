@@ -8,74 +8,137 @@
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💄</text></svg>"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beauty Shop</title>
+    <title>Pallete Shop</title>
   </head>
   <body>
-    <main class="w-full lg:px-15">
+    <main class="max-w-7xl mx-auto px-5">
       <!-- موبایل نویگیشن -->
       <nav class="lg:hidden pt-5 flex flex-row justify-between">
-        <div class="flex justify-end items-center p-2 bg-white rounded-tl-2xl rounded-bl-2xl w-20 h-15">
-          <div class="p-1 border border-green-100 rounded-lg">
-            <i data-lucide="Menu" class="text-green-400 rounded-lg bg-green-100 p-1 w-8 h-8"></i>
+        <div
+          class="flex justify-end items-center p-2 bg-white rounded-tl-2xl rounded-bl-2xl w-20 h-15"
+        >
+          <div
+            class="p-1 border cursor-pointer hover:bg-green-100 border-green-100 rounded-lg"
+          >
+            <i
+              data-lucide="Menu"
+              class="text-amber-800 rounded-lg bg-green-100 p-1 w-8 h-8"
+            ></i>
           </div>
         </div>
-        <div class="rounded-3xl">
-          <img src="/logo.png" class="rounded-2xl w-30 h-15" alt="لوگو فروشگاه بیوتی شاپ" />
+        <div>
+          <img src="/logo.png" class="w-30 h-30" alt="لوگو فروشگاه بیوتی شاپ" />
         </div>
-        <div class="flex items-center p-2 bg-white rounded-tr-2xl rounded-br-2xl w-20 h-15">
-          <div class="flex flex-row justify-between items-center gap-2 p-1 border border-green-100 rounded-lg">
+        <div
+          class="flex items-center p-2 bg-white rounded-tr-2xl rounded-br-2xl w-20 h-15"
+        >
+          <div
+            class="flex flex-row cursor-pointer justify-between hover:bg-green-100 items-center gap-2 p-1 border border-green-100 rounded-lg"
+          >
             <p>o</p>
-            <i data-lucide="ShoppingBag" class="text-green-400 rounded-lg bg-green-100 p-1 w-8 h-8"></i>
+            <i
+              data-lucide="ShoppingCart"
+              class="fill-yellow-100 text-yellow-400 rounded-lg bg-green-100 p-1 w-8 h-8"
+            ></i>
           </div>
         </div>
       </nav>
 
       <!-- دکور پشت منو -->
-      <div class="hidden lg:block bg-[#ECECEC] h-26 w-[95%] left-1/2 -translate-x-1/2 absolute top-10 -z-10 rounded-3xl"></div>
+      <div
+        class="hidden lg:block bg-[#ffa7d9] h-20 w-[90%] left-1/2 -translate-x-1/2 absolute top-11 -z-10 rounded-3xl"
+      ></div>
 
       <!-- دسکتاپ نویگیشن -->
-      <nav class="hidden lg:flex justify-center">
-        <div class="grid grid-cols-10 gap-4 pt-6 w-full">
-          <div class="col-span-2 flex justify-center items-center rounded-4xl px-4 bg-white shadow">
-            <img src="/logo.png" alt="لوگو فروشگاه بیوتی شاپ" />
+      <nav class="hidden lg:flex justify-center sticky top-0 z-50">
+        <div class="grid grid-cols-10 gap-6 pt-6 w-full">
+          <div
+            class="col-span-2 flex justify-center items-center rounded-4xl bg-white shadow-md border-3 border-dashed border-pink-300"
+          >
+            <img src="/logo.png" alt="لوگو فروشگاه بیوتی شاپ" class="w-24" />
           </div>
-          <div class="col-span-6 flex flex-col px-6 justify-center gap-5 text-[#777] shadow bg-white rounded-4xl">
-            <div class="flex justify-between p-1 border h-10 w-120 rounded-xl overflow-hidden border-green-100 hover:border-green-300 bg-white">
-              <input type="text" placeholder="جستجوی نام محصول،شرکت..." class="px-4 w-80 py-2 text-[12px] focus:outline-none text-gray-700" />
-              <div class="flex justify-center items-center cursor-pointer px-4 rounded-lg bg-green-100">
-                <i data-lucide="search" class="w-5 h-5 text-green-400"></i>
+          <div
+            class="col-span-6 flex flex-col justify-center items-center gap-3 text-[#777] shadow-md bg-white rounded-full border-3 border-dashed border-pink-300"
+          >
+            <div
+              class="flex justify-between p-1 border h-10 w-100 rounded-xl overflow-hidden border-blue-100 hover:border-blue-300 bg-white"
+            >
+              <input
+                type="text"
+                placeholder="جستجوی نام محصول،شرکت..."
+                class="px-4 w-80 py-2 text-[12px] focus:outline-none text-gray-700"
+              />
+              <div
+                class="flex justify-center items-center cursor-pointer px-4 rounded-lg bg-blue-100"
+              >
+                <i
+                  data-lucide="search"
+                  class="w-5 h-5 fill-yellow-100 text-amber-700"
+                ></i>
               </div>
             </div>
-            <div class="flex flex-row gap-[3%] text-sm w-full">
-              <div class="cursor-pointer text-black font-bold">صفحه اصلی</div>
-              <div class="flex flex-row cursor-pointer hover:text-black">
+            <div
+              class="flex flex-row gap-[3%] text-sm w-full items-center justify-center"
+            >
+              <div class="cursor-pointer text-black hover:text-black font-bold">
+                صفحه اصلی
+              </div>
+              <div
+                class="flex flex-row cursor-pointer hover:text-black hover:font-bold"
+              >
                 <p>دسته بندی محصولات</p>
                 <i data-lucide="ChevronDown" class="w-5 h-5"></i>
               </div>
-              <div class="cursor-pointer hover:text-black">پیگیری سفارشات</div>
-              <div class="cursor-pointer hover:text-black">تماس با ما</div>
-              <div class="cursor-pointer hover:text-black">درباره ما</div>
+              <div class="cursor-pointer hover:text-black hover:font-bold">
+                پیگیری سفارشات
+              </div>
+              <div class="cursor-pointer hover:text-black hover:font-bold">
+                درباره ما
+              </div>
             </div>
           </div>
-          <div class="col-span-2 flex flex-col justify-center gap-5 p-4 text-[12px] rounded-4xl bg-white shadow">
+          <div
+            class="col-span-2 flex flex-col justify-center gap-2 p-4 text-[12px] rounded-4xl bg-white shadow-md border-3 border-dashed border-pink-300"
+          >
             <div class="flex flex-row justify-between gap-2">
-              <div class="flex flex-row justify-between cursor-pointer border border-green-200 hover:bg-green-100 p-1 pr-2 items-center gap-2 bg-white rounded-lg">
+              <div
+                class="flex flex-row justify-between cursor-pointer border border-green-200 hover:bg-green-100 p-1 pr-2 items-center gap-2 bg-white rounded-xl"
+              >
                 <p>ورود</p>
-                <div class="flex justify-center items-center p-1 rounded-lg bg-green-100">
-                  <i data-lucide="User" class="w-5 h-5 text-green-400"></i>
+                <div
+                  class="flex justify-center items-center p-1 rounded-lg bg-green-100"
+                >
+                  <i
+                    data-lucide="User"
+                    class="w-5 fill-blue-300 h-5 text-blue-400"
+                  ></i>
                 </div>
               </div>
-              <div class="flex flex-row justify-between cursor-pointer border border-green-200 hover:bg-green-100 p-1 pr-2 items-center gap-2 bg-white rounded-lg">
+              <div
+                class="flex flex-row justify-between cursor-pointer border border-green-200 hover:bg-green-100 p-1 pr-2 items-center gap-2 bg-white rounded-xl"
+              >
                 <p>۰</p>
-                <div class="flex justify-center items-center p-1 rounded-lg bg-green-100">
-                  <i data-lucide="ShoppingBag" class="w-5 h-5 text-green-400"></i>
+                <div
+                  class="flex justify-center items-center p-1 rounded-lg bg-green-100"
+                >
+                  <i
+                    data-lucide="ShoppingCart"
+                    class="w-5 h-5 fill-yellow-100 text-yellow-400"
+                  ></i>
                 </div>
               </div>
             </div>
-            <div class="flex flex-row justify-between border border-green-200 cursor-pointer hover:bg-green-100 p-1 pr-2 items-center bg-white rounded-lg">
+            <div
+              class="flex flex-row justify-between border border-green-200 cursor-pointer hover:bg-green-100 p-1 pr-2 items-center bg-white rounded-xl"
+            >
               <p>پشتیبانی</p>
-              <div class="flex justify-center items-center p-1 rounded-lg bg-green-100">
-                <i data-lucide="Headphones" class="w-5 h-5 text-green-400"></i>
+              <div
+                class="flex justify-center items-center p-1 rounded-lg bg-green-100"
+              >
+                <i
+                  data-lucide="Phone"
+                  class="w-5 h-5 fill-amber-600 text-amber-900"
+                ></i>
               </div>
             </div>
           </div>
@@ -83,41 +146,79 @@
       </nav>
 
       <!-- هدر اصلی -->
-      <header class="mt-10 px-8 sm:px-25 md:px-10 lg:px-0">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-12">
+      <header class="mt-10 sm:px-10">
+        <div class="grid grid-cols-1 justify-center items-center gap-12">
           <!-- بخش اصلی بنر  -->
-          <div class="relative md:col-span-1 lg:col-span-2 bg-[#ea3788] shadow-lg rounded-4xl h-80">
-            <div class="flex flex-col gap-3 pt-5 pr-8">
-              <img src="/gol2.png" class="w-15" alt="گل تزئینی" />
-              <p class="text-white font-bold text-2xl md:text-3xl">
-                در بیوتی شاپ،<br />
-                زیبایی محدودیت ندارد!
+          <div
+            class="relative md:col-span-1 bg-[#ea3788] shadow-pink-700 shadow-lg rounded-4xl h-120"
+          >
+            <div class="flex flex-col gap-5 pt-5 pr-10">
+              <img src="/gol2.png" class="w-20" alt="گل تزئینی" />
+              <p class="text-white font-bold text-2xl md:text-5xl">
+                پالت شاپ رنگ زیبایی تو
               </p>
-              <p class="text-[12px] text-[#f89dc3]">
+              <p class="text-[#f89dc3]">
                 فروشگاه لوازم آرایشی، بهداشتی و محصولات مراقبت از پوست
               </p>
-              <button class="w-28 text-[12px] py-2 font-thin rounded-xl cursor-pointer bg-[#f89dc3] text-white">
-                مشاهده محصولات
-              </button>
-              <img src="/gol3.png" class="w-15" alt="گل تزئینی" />
+              <div class="flex flex-row gap-2">
+                <button
+                  class="w-28 text-[12px] py-2 font-thin rounded-xl cursor-pointer bg-[#f89dc3] hover:bg-[#f991bc] border-2 border-white hover:font-extrabold text-white"
+                >
+                  مشاهده محصولات
+                </button>
+                <button
+                  class="w-20 hidden md:block text-[12px] py-2 font-thin rounded-xl cursor-pointer bg-[#f89dc3] hover:bg-[#f991bc] border-2 border-white hover:font-extrabold text-white"
+                >
+                  تماس با ما
+                </button>
+              </div>
+              <img src="/gol3.png" class="w-23 hidden md:block" alt="گل تزئینی" />
             </div>
-            <img src="/slider.png" class="absolute w-[55%] rounded-b-4xl left-0 bottom-0" alt="تصویر اسلایدر محصولات آرایشی" />
-            <img src="/gol1.png" class="absolute w-20 top-0 left-1/2 -translate-x-1/2" alt="گل تزئینی بالای بنر" />
-            <img src="/namad.png" class="absolute top-1/2 -translate-y-1/2 -right-5 w-10" alt="نماد اعتماد" />
+            <img
+              src="/gol0.png"
+              class="absolute w-130 lg:w-170 rounded-b-4xl left-0 md:left-10 bottom-0"
+              alt="تصویر اسلایدر محصولات آرایشی"
+            />
+            <img
+              src="/gol1.png"
+              class="absolute w-30 md:w-40 top-0 left-1/2 -translate-x-1/2"
+              alt="گل تزئینی بالای بنر"
+            />
+
+            <img
+              src="/namad.png"
+              class="absolute w-10 -right-5 top-1/2 -translate-y-1/2 md:-right-7 md:w-15"
+              alt="نماد اعتماد"
+            />
+            <img
+              src="/namad 2.png"
+              class="absolute w-10 -left-5 top-1/2 -translate-y-1/2 md:-left-7 md:w-15"
+              alt="نماد اعتماد"
+            />
           </div>
 
           <!-- بخش تخفیف ویژه -->
-          <div class="lg:col-span-1 md:col-span-1 flex flex-col h-full bg-white rounded-3xl shadow">
+          <!-- <div
+            class="lg:col-span-1 md:col-span-1 flex flex-col h-full bg-white rounded-3xl shadow"
+          >
             <div class="relative flex flex-row justify-between">
-              <p class="border-b border-l border-l-[#999] border-b-[#999] text-[14px] rounded-bl-2xl p-4 justify-center">
+              <p
+                class="border-b border-l border-l-[#999] border-b-[#999] text-[14px] rounded-bl-2xl p-4 justify-center"
+              >
                 تخفیف ویژه
               </p>
-              <button class="absolute cursor-pointer left-4 top-4 p-3 text-[#666] font-thin rounded-xl text-[10px] bg-[#f5f5f5]">
+              <button
+                class="absolute cursor-pointer left-4 top-4 p-3 text-[#666] font-thin rounded-xl text-[10px] bg-[#f5f5f5]"
+              >
                 مراقبت از پوست
               </button>
             </div>
             <div class="flex justify-center cursor-pointer">
-              <img src="/abresan.png" class="rounded-xl w-40 h-40" alt="کرم آبرسان لایسل" />
+              <img
+                src="/abresan.png"
+                class="rounded-xl w-40 h-40"
+                alt="کرم آبرسان لایسل"
+              />
             </div>
             <div class="flex justify-center text-sm">
               کرم آبرسان لایسل پوست خشک و نرمال
@@ -127,51 +228,90 @@
                 <p class="line-through text-[#999] text-sm">۱۸۰،۰۰۰ تومان</p>
                 <p class="text-l">۱۴۰،۰۰۰ تومان</p>
               </div>
-              <div class="bg-green-100 p-2 text-green-700 hover:bg-green-200 cursor-pointer rounded-bl-2xl rounded-tr-2xl">
+              <div
+                class="bg-green-100 p-2 text-green-700 hover:bg-green-200 cursor-pointer rounded-bl-2xl rounded-tr-2xl"
+              >
                 افزودن به سبد خرید
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- بخش چهار ویژگی سایت -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-5">
-          <div class="relative hover:shadow-xl transition duration-200 items-center p-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white">
-            <img src="/flesh.png" class="absolute w-5 right-0 top-1/2 -translate-y-1/2" alt="فلش تزئینی" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-10">
+          <div
+            class="relative hover:shadow-xl transition duration-200 items-center py-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white"
+          >
+            <img
+              src="/flesh.png"
+              class="absolute w-5 right-0 top-1/2 -translate-y-1/2"
+              alt="فلش تزئینی"
+            />
             <img src="/car.svg" class="w-10 h-10" alt="آیکون ارسال رایگان" />
-            <div class="border-r border-[#c5c5c5] mr-2 p-2">
+            <div class="border-r border-[#c5c5c5] mr-2 pr-2">
               <p class="font-bold">ارسال رایگان</p>
               <p class="text-gray-500 text-sm">برای تمامی کشور</p>
             </div>
           </div>
 
-          <div class="relative hover:shadow-xl transition duration-200 items-center p-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white">
-            <img src="/flesh.png" class="absolute w-5 right-0 top-1/2 -translate-y-1/2" alt="فلش تزئینی" />
-            <img src="/earth.svg" class="w-10 h-10" alt="آیکون پوشش جغرافیایی" />
-            <div class="border-r border-[#c5c5c5] mr-2 p-2">
-              <p class="font-bold">ارسال به تمامی نقاط کشور</p>
+          <div
+            class="relative hover:shadow-xl transition duration-200 items-center py-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white"
+          >
+            <img
+              src="/flesh.png"
+              class="absolute w-5 right-0 top-1/2 -translate-y-1/2"
+              alt="فلش تزئینی"
+            />
+            <img
+              src="/earth.svg"
+              class="w-10 h-10"
+              alt="آیکون پوشش جغرافیایی"
+            />
+            <div class="border-r border-[#c5c5c5] mr-2 pr-2">
+              <p class="font-bold">ارسال به تمامی کشور</p>
               <p class="text-gray-500 text-sm">از نزدیک ترین تا دورترین</p>
             </div>
           </div>
 
-          <div class="relative hover:shadow-xl transition duration-200 items-center p-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white">
-            <img src="/flesh.png" class="absolute w-5 right-0 top-1/2 -translate-y-1/2" alt="فلش تزئینی" />
-            <img src="/search-bag.svg" class="w-10 h-10" alt="آیکون تنوع محصولات" />
-            <div class="border-r border-[#c5c5c5] mr-2 p-2">
+          <div
+            class="relative hover:shadow-xl transition duration-200 items-center py-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white"
+          >
+            <img
+              src="/flesh.png"
+              class="absolute w-5 right-0 top-1/2 -translate-y-1/2"
+              alt="فلش تزئینی"
+            />
+            <img
+              src="/search-bag.svg"
+              class="w-10 h-10"
+              alt="آیکون تنوع محصولات"
+            />
+            <div class="border-r border-[#c5c5c5] mr-2 pr-2">
               <p class="font-bold">تنوع محصولات</p>
               <p class="text-gray-500 text-sm">همکاری با برندهای مختلف</p>
             </div>
           </div>
 
-          <div class="relative hover:shadow-xl transition duration-200 items-center p-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white">
-            <img src="/flesh.png" class="absolute w-5 right-0 top-1/2 -translate-y-1/2" alt="فلش تزئینی" />
-            <img src="/phon.svg" class="w-10 h-10" alt="آیکون پشتیبانی 24 ساعته" />
-            <div class="border-r border-[#c5c5c5] mr-2 p-2">
+          <div
+            class="relative hover:shadow-xl transition duration-200 items-center py-6 pr-8 flex gap-1 rounded-3xl flex-row bg-white"
+          >
+            <img
+              src="/flesh.png"
+              class="absolute w-5 right-0 top-1/2 -translate-y-1/2"
+              alt="فلش تزئینی"
+            />
+            <img
+              src="/phon.svg"
+              class="w-10 h-10"
+              alt="آیکون پشتیبانی 24 ساعته"
+            />
+            <div class="border-r border-[#c5c5c5] mr-2 pr-2">
               <p class="font-bold">پشتیبانی 24 ساعته</p>
               <p class="text-gray-500 text-sm">برای تمامی سفارشات</p>
             </div>
           </div>
         </div>
+        <div class="h-200 mt-100 bg-amber-600 w-"></div>
       </header>
     </main>
 

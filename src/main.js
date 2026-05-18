@@ -6,6 +6,9 @@ import {
   User,
   Phone,
   Menu,
+  Send,
+  Star,
+  ArrowLeft,
 } from "lucide";
 import "@fontsource/vazirmatn";
 import "./style.css";
@@ -20,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
       Phone: Phone,
       ShoppingCart: ShoppingCart,
       Menu: Menu,
+      Send: Send,
+      Star: Star,
+      ArrowLeft: ArrowLeft,
     },
   });
 });

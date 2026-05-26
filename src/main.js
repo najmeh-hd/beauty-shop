@@ -9,6 +9,7 @@ import {
   Send,
   Star,
   ArrowLeft,
+  Package,
 } from "lucide";
 import "@fontsource/vazirmatn";
 import "./style.css";
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       Send: Send,
       Star: Star,
       ArrowLeft: ArrowLeft,
+      Package: Package,
     },
   });
 });
